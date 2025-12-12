@@ -4,102 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taejun Song</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; padding-bottom: 1rem; border-bottom: 1px solid #eee; }
-    header h1 { font-size: 1.5rem; font-weight: 600; }
-    nav a { margin-left: 1.5rem; color: #555; }
-    section { margin-bottom: 2.5rem; }
-    h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; color: #111; }
-    .hero p { color: #555; }
-    .hero .tagline { font-size: 1.25rem; color: #111; margin-bottom: 0.5rem; }
-    ul { list-style: none; }
-    ul li { margin-bottom: 0.4rem; padding-left: 1rem; position: relative; }
-    ul li::before { content: "·"; position: absolute; left: 0; color: #999; }
-    .contact a { margin-right: 1.5rem; }
-    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.85rem; color: #999; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Taejun Song</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1><a href="index.html">Taejun Song</a></h1>
+      <nav>
+        <a href="index.html" class="active">About</a>
+        <a href="research.html">Research</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-
-  <section class="hero" id="about">
-    <p class="tagline">Research-minded ML Engineer · Computational Biology · Quantitative Systems</p>
-    <p>I am a research-oriented machine learning engineer with a strong mathematical background. My work focuses on building reliable, interpretable, and scalable systems at the intersection of mathematics, machine learning, and scientific research.</p>
-    <p style="margin-top: 0.5rem;">I am particularly interested in problems where mathematical structure directly informs modeling decisions, system design, and evaluation rigor.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>M.S. in Computer Science</strong>, Georgia Institute of Technology (OMSCS) — In progress</li>
-      <li><strong>B.S. in Mathematics</strong>, Seoul National University</li>
-    </ul>
-  </section>
-
-  <section id="career">
-    <h2>Career</h2>
-    <ul>
-      <li><strong>LLM Data Scientist</strong>, Turing — Working on large-scale language model evaluation, data pipelines, and research-driven ML workflows.</li>
-      <li><strong>Quantitative Researcher</strong> (Cryptocurrency & Systematic Trading) — Designed and deployed statistical arbitrage and execution systems grounded in probability, optimization, and market microstructure.</li>
-      <li><strong>Research Engineer</strong> (Computational Biology) — Building ML pipelines for genome editing outcome prediction and protein modeling, with focus on reproducibility and scalability.</li>
-    </ul>
-  </section>
-
-  <section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Genome editing outcome prediction using sequence- and representation-based models</li>
-      <li>Protein modeling and large-scale structure prediction pipelines</li>
-      <li>Representation learning with strong inductive bias and biological constraints</li>
-      <li>Reliable ML systems: evaluation rigor, data leakage prevention, reproducibility</li>
-      <li>Agentic and retrieval-augmented systems for scientific research assistance</li>
-    </ul>
-  </section>
-
-  <section id="math">
-    <h2>Mathematics</h2>
-    <p>Mathematics is the intellectual core of my work. I value it not only as a tool, but as a way of thinking — clarifying assumptions, revealing structure, and guiding principled decisions in complex systems. I believe strong mathematical intuition is the most transferable skill across research, engineering, and quantitative disciplines.</p>
-    <ul style="margin-top: 0.75rem;">
-      <li>Probability and stochastic processes</li>
-      <li>Optimization and numerical methods</li>
-      <li>Linear algebra and representation theory</li>
-      <li>Algorithms and complexity</li>
-      <li>Abstract frameworks (e.g. category-theoretic thinking) that unify concepts across domains</li>
-    </ul>
-  </section>
-
-  <section id="work">
-    <h2>Selected Work</h2>
-    <ul>
-      <li>Open-source ML and research engineering projects on GitHub</li>
-      <li>Notes and technical writing on ML systems, mathematics, and scientific modeling</li>
-      <li>Ongoing independent research and experimentation</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <a href="https://github.com/taejun-song">GitHub</a>
-    <a href="mailto:songtj09@gmail.com">songtj09@gmail.com</a>
-    <a href="mailto:songtj10@snu.ac.kr">songtj10@snu.ac.kr</a>
-    <a href="mailto:taejunsong@yuhs.ac">taejunsong@yuhs.ac</a>
-    <a href="mailto:taejun.song@gatech.edu">taejun.song@gatech.edu</a>
-  </section>
-
+  <main class="container">
+    <section class="hero">
+      <p class="tagline">Research-minded ML Engineer · Computational Biology · Quantitative Systems</p>
+      <p>I am a research-oriented machine learning engineer with a strong mathematical background. My work focuses on building reliable, interpretable, and scalable systems at the intersection of mathematics, machine learning, and scientific research.</p>
+      <p>I am particularly interested in problems where mathematical structure directly informs modeling decisions, system design, and evaluation rigor.</p>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <h3>M.S. in Computer Science</h3>
+        <p class="subtitle">Georgia Institute of Technology (OMSCS) — In progress</p>
+      </div>
+      <div class="card">
+        <h3>B.S. in Mathematics</h3>
+        <p class="subtitle">Seoul National University</p>
+      </div>
+    </section>
+    <section>
+      <h2>Career</h2>
+      <div class="card">
+        <h3>LLM Data Scientist</h3>
+        <p class="subtitle">Turing — Working on large-scale language model evaluation, data pipelines, and research-driven ML workflows.</p>
+      </div>
+      <div class="card">
+        <h3>Quantitative Researcher</h3>
+        <p class="subtitle">Cryptocurrency & Systematic Trading — Designed and deployed statistical arbitrage and execution systems grounded in probability, optimization, and market microstructure.</p>
+      </div>
+      <div class="card">
+        <h3>Research Engineer</h3>
+        <p class="subtitle">Computational Biology — Building ML pipelines for genome editing outcome prediction and protein modeling, with focus on reproducibility and scalability.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Mathematics</h2>
+      <p>Mathematics is the intellectual core of my work. I value it not only as a tool, but as a way of thinking — clarifying assumptions, revealing structure, and guiding principled decisions in complex systems.</p>
+      <div class="math-topics">
+        <span>Probability & Stochastic Processes</span>
+        <span>Optimization</span>
+        <span>Linear Algebra</span>
+        <span>Representation Theory</span>
+        <span>Algorithms</span>
+        <span>Category Theory</span>
+      </div>
+    </section>
+  </main>
   <footer>
-    &copy; 2025 Taejun Song
+    <div class="container">&copy; 2025 Taejun Song</div>
   </footer>
 </body>
 </html>
